@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var devslopesProfileLogoImg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        devslopesProfileLogoImg.layer.cornerRadius = 10
+        devslopesProfileLogoImg.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
